@@ -79,7 +79,7 @@ public class UserServiceAspect {
 		System.out.println("List of Users:");
 		for (int i = 0; i < users.size(); i++) {
 			User currentUser = users.get(i);
-			System.out.println(i + "." +  currentUser.getUsername());
+			System.out.println((i + 1) + "." +  currentUser.getUsername());
 		}
 		LOGGER.info("Method Execution Name:" + joinPoint.getSignature().getName());
 	}

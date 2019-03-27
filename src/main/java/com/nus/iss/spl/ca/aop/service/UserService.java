@@ -24,6 +24,7 @@ public class UserService {
 		return currentUser;
 	}
 
+	@LogExecutionTime
 	public List<User> getAllUsers() {
 		return users;
 	}
